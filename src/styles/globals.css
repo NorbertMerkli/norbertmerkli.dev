@@ -15,6 +15,10 @@ html {
   @apply p-6;
 }
 
+.skill-group {
+  @apply mt-12 flex flex-col gap-6;
+}
+
 @tailwind utilities;
 
 .bg-gradient {
