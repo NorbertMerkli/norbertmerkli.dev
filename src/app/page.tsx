@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import heroIllustration from "@public/hero-illustration.svg";
-import { SkillGroup } from "@components/skillGroup";
+import { SkillGroup } from "@components/SkillGroup";
 
 export default function Home() {
   return (
