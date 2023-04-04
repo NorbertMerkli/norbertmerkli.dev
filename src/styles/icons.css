@@ -1,0 +1,17 @@
+@layer components {
+  .icon {
+    @apply h-6 w-6 fill-black dark:fill-secondary;
+  }
+
+  .icon .light-boxes {
+    @apply fill-lightgray dark:fill-white;
+  }
+
+  .skill-icon {
+    @apply inline-block rounded-lg border-[1px] border-lightgray fill-primary p-2 dark:border-secondary;
+  }
+
+  .skill-set {
+    @apply flex flex-row gap-4;
+  }
+}
