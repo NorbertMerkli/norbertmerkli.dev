@@ -1,0 +1,9 @@
+@layer base {
+  h1 {
+    @apply mb-4 text-center font-serif text-7xl;
+  }
+
+  h2 {
+    @apply text-center text-2xl;
+  }
+}
