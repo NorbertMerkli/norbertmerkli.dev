@@ -1,3 +1,19 @@
+import Image from "next/image";
+
+import heroIllustration from "@public/hero-illustration.svg";
+
 export default function Home() {
-    return <h1>Welcome to my developer portfolio</h1>;
+  return (
+    <section className="page-section bg-gradient">
+      <h1>
+        I&apos;m <span className="text-primary">Norbert</span> Merkli
+      </h1>
+      <h2>A full-stack web developer.</h2>
+      <p className=" my-8 text-center text-xl">
+        Welcome to my site. Here I showcase my skills and share what I&apos;m
+        learning about different technologies.
+      </p>
+      <Image src={heroIllustration} alt="Illustration of a developer" />
+    </section>
+  );
 }
