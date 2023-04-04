@@ -6,6 +6,10 @@
   h2 {
     @apply text-center text-2xl;
   }
+
+  h4 {
+    @apply text-center;
+  }
 }
 
 @layer component {

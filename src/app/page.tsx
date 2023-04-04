@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import heroIllustration from "@public/hero-illustration.svg";
 import { SkillGroup } from "@components/SkillGroup";
+import { GitHub, LinkedIn } from "@/components/svg/logos/logos";
 
 export default function Home() {
   return (
@@ -118,6 +119,27 @@ export default function Home() {
           easy to get familiar with the rest of the framework but I had more
           important things to learn first.
         </SkillGroup>
+      </section>
+      <section className="page-section">
+        <h3>Contact</h3>
+        <h2 className="font-serif dark:text-white">Norbert Merkli</h2>
+        <h4 className="text-darkgray dark:text-secondary">Szentgotthárd, HU</h4>
+        <div className="flex flex-row justify-center gap-8 py-8">
+          <a
+            href="https://www.linkedin.com/in/norbert-merkli-588703250/"
+            target="_blank"
+            className="icon-button"
+          >
+            <LinkedIn />
+          </a>
+          <a
+            href="https://github.com/NorbertMerkli"
+            target="_blank"
+            className="icon-button"
+          >
+            <GitHub />
+          </a>
+        </div>
       </section>
     </>
   );
