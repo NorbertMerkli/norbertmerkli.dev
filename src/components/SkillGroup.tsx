@@ -1,15 +1,14 @@
-import { SkillSet, Tech } from "@/components/svg/logos";
-import { PropsWithChildren } from "react";
+import { SkillSet } from "@/components/svg/logos";
+import { SkillGroupContent } from "@/content/skills";
 
-type SkillGroupProps = PropsWithChildren & {
-  skills: Tech[];
-  title: string;
+type SkillGroupProps = {
+  content: SkillGroupContent;
 };
 
-export const SkillGroup = (props: SkillGroupProps) => (
+export const SkillGroup = ({ content }: SkillGroupProps) => (
   <article className="skill-group">
-    <SkillSet skills={props.skills} />
-    <h2>{props.title}</h2>
-    <p>{props.children}</p>
+    <SkillSet skills={content.skills} />
+    <h2>{content.title ? content.title : content.skills.join(", ")}</h2>
+    <p>{content.description}</p>
   </article>
 );
