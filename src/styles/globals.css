@@ -12,11 +12,11 @@ html {
 @tailwind components;
 
 .page-section {
-  @apply p-6;
+  @apply px-6;
 }
 
 .skill-group {
-  @apply mt-12 flex flex-col gap-6;
+  @apply flex flex-col gap-6;
 }
 
 @tailwind utilities;
