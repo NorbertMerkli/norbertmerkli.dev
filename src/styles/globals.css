@@ -5,7 +5,13 @@
 @tailwind base;
 
 html {
-  @apply text-base text-black dark:text-secondary;
+  @apply overflow-hidden text-[16px] text-black dark:text-secondary sm:text-[32px];
+}
+
+body {
+  height: 100vh;
+  height: 100dvh;
+  @apply bg-gradient overflow-y-auto overflow-x-hidden;
 }
 
 @tailwind components;

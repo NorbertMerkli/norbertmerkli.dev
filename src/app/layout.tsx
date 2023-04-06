@@ -11,10 +11,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="overflow-hidden">
-      <body className="bg-gradient h-screen overflow-x-hidden overflow-y-scroll">
-        {children}
-      </body>
+    <html lang="en">
+      <body>{children}</body>
     </html>
   );
 }
