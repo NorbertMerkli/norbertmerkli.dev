@@ -1,6 +1,4 @@
-"use client";
-
-import { ThemeSwitch } from "@components/svg/icons";
+import { ThemeSwitch } from "@components/ThemeSwitch";
 
 export const Navbar = () => (
   <nav className="flex flex-row justify-between p-2">
