@@ -1,14 +1,18 @@
 import Image from "next/image";
 
+import * as content from "@content/index";
 import heroIllustration from "@public/hero-illustration.svg";
+
 import { SkillGroup } from "@components/SkillGroup";
-import { GitHub, LinkedIn } from "@/components/svg/logos/logos";
-import { PageSection } from "@/components/PageSection";
-import * as content from "@/content";
+import { GitHub, LinkedIn } from "@components/svg/logos/logos";
+import { PageSection } from "@components/PageSection";
+import { Navbar } from "@components/Navbar";
 
 export default function Home() {
   return (
     <>
+      <Navbar />
+
       <header className="flex h-screen flex-col pb-[10vh]">
         <section className="safe-area text-center text-base">
           <h1 className="font-serif text-6xl lg:text-left">
@@ -27,6 +31,7 @@ export default function Home() {
             fill={true}
             src={heroIllustration}
             alt="Illustration of a developer"
+            priority={true}
           />
         </div>
       </header>
