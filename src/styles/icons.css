@@ -7,8 +7,12 @@
     @apply fill-lightgray dark:fill-white;
   }
 
+  .icon-container {
+    @apply inline-block h-10 w-10 rounded-lg p-2;
+  }
+
   .skill-icon {
-    @apply inline-block h-10 w-10 rounded-lg border-[1px] border-lightgray fill-primary p-2 dark:border-secondary;
+    @apply icon-container border border-lightgray dark:border-secondary;
   }
 
   .skill-set {
@@ -16,6 +20,16 @@
   }
 
   .icon-button {
-    @apply h-10 w-10;
+    @apply icon-container;
+  }
+
+  .icon-button .icon {
+    @apply duration-200 hover:fill-primary;
+  }
+}
+
+@layer utilities {
+  .border {
+    @apply border-[1px];
   }
 }

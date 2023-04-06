@@ -1,26 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Nunito:ital@0;1&display=swap");
 
-@import "./text.css";
 @import "./icons.css";
 
 @tailwind base;
 
 html {
-  @apply bg-sky-100 font-sans text-black dark:bg-slate-800 dark:text-secondary;
+  @apply text-base text-black dark:text-secondary;
 }
 
 @tailwind components;
-
-.page-section {
-  @apply px-6;
-}
-
-.skill-group {
-  @apply flex flex-col gap-6;
-}
-
 @tailwind utilities;
 
-.bg-gradient {
-  @apply bg-gradient-to-t from-gradient-start-light to-gradient-end-light dark:bg-gradient-end-dark dark:from-gradient-start-dark;
+@layer utilities {
+  .bg-gradient {
+    @apply bg-gradient-to-t from-gradient-start-light to-gradient-end-light dark:bg-gradient-end-dark dark:from-gradient-start-dark;
+  }
 }

@@ -9,19 +9,27 @@ import * as content from "@/content";
 export default function Home() {
   return (
     <>
-      <section className="page-section bg-gradient h-screen">
-        <h1>
-          I&apos;m <span className="text-primary">Norbert</span> Merkli
-        </h1>
-        <h2 className="text-darkgray dark:text-white">
-          A full-stack web developer.
-        </h2>
-        <p className=" my-8 text-center text-xl">
-          Welcome to my site. Here I showcase my skills and share what I&apos;m
-          learning about different technologies.
-        </p>
-        <Image src={heroIllustration} alt="Illustration of a developer" />
-      </section>
+      <header className="h-screen px-6">
+        <section className="h-3/5 text-center">
+          <h1 className="font-serif text-6xl lg:text-left">
+            I&apos;m <span className="text-primary">Norbert</span> Merkli
+          </h1>
+          <h2 className="mb-8 mt-4 text-xl text-darkgray dark:text-white lg:text-left">
+            A full-stack web developer.
+          </h2>
+          <p className="text-xl lg:text-left">
+            Welcome to my site. Here I showcase my skills and share what
+            I&apos;m learning about different technologies.
+          </p>
+        </section>
+        <div className="relative h-2/5">
+          <Image
+            fill={true}
+            src={heroIllustration}
+            alt="Illustration of a developer"
+          />
+        </div>
+      </header>
 
       <PageSection title="Skills">
         <div className="flex flex-col gap-12">
@@ -32,8 +40,12 @@ export default function Home() {
       </PageSection>
 
       <PageSection title="Contact">
-        <h2 className="font-serif dark:text-white">Norbert Merkli</h2>
-        <h4 className="text-darkgray dark:text-secondary">Szentgotthárd, HU</h4>
+        <h2 className="text-center font-serif text-xl dark:text-white">
+          Norbert Merkli
+        </h2>
+        <h4 className="text-center text-darkgray dark:text-secondary">
+          Szentgotthárd, HU
+        </h4>
         <div className="flex flex-row justify-center gap-8 py-8">
           <a
             href="https://www.linkedin.com/in/norbert-merkli-588703250/"
