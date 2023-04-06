@@ -23,8 +23,8 @@
     @apply icon-container;
   }
 
-  .icon-button .icon {
-    @apply duration-200 hover:fill-primary;
+  .icon-button > .icon {
+    @apply fill-none stroke-black stroke-2 duration-200 hover:stroke-primary dark:stroke-secondary hover:dark:stroke-white;
   }
 }
 
