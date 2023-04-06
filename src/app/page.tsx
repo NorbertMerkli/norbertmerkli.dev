@@ -9,20 +9,20 @@ import * as content from "@/content";
 export default function Home() {
   return (
     <>
-      <header className="h-screen px-6">
-        <section className="h-3/5 text-center">
+      <header className="flex h-screen flex-col pb-[10vh]">
+        <section className="safe-area text-center text-base">
           <h1 className="font-serif text-6xl lg:text-left">
             I&apos;m <span className="text-primary">Norbert</span> Merkli
           </h1>
-          <h2 className="mb-8 mt-4 text-xl text-darkgray dark:text-white lg:text-left">
+          <h2 className="mb-8 mt-4 text-xl text-darkgray dark:text-white sm:mb-4 sm:mt-2 sm:text-sm lg:text-left">
             A full-stack web developer.
           </h2>
-          <p className="text-xl lg:text-left">
+          <p className="text-xl sm:text-sm lg:text-left">
             Welcome to my site. Here I showcase my skills and share what
             I&apos;m learning about different technologies.
           </p>
         </section>
-        <div className="relative h-2/5">
+        <div className="relative flex-1">
           <Image
             fill={true}
             src={heroIllustration}

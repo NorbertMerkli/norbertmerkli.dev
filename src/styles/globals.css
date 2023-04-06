@@ -5,13 +5,11 @@
 @tailwind base;
 
 html {
-  @apply overflow-hidden text-[16px] text-black dark:text-secondary sm:text-[32px];
+  @apply bg-gradient-start-light text-[16px] text-black dark:bg-gradient-start-dark dark:text-secondary sm:text-[32px];
 }
 
 body {
-  height: 100vh;
-  height: 100dvh;
-  @apply bg-gradient overflow-y-auto overflow-x-hidden;
+  @apply bg-gradient bg-fixed;
 }
 
 @tailwind components;
@@ -19,6 +17,10 @@ body {
 
 @layer utilities {
   .bg-gradient {
-    @apply bg-gradient-to-t from-gradient-start-light to-gradient-end-light dark:bg-gradient-end-dark dark:from-gradient-start-dark;
+    @apply bg-gradient-to-t from-gradient-start-light to-gradient-end-light dark:from-gradient-start-dark dark:to-gradient-end-dark;
+  }
+
+  .safe-area {
+    @apply px-6 sm:px-7;
   }
 }
