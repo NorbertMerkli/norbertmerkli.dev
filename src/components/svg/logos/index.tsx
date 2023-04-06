@@ -2,11 +2,10 @@ import * as Logo from "./logos";
 
 export type Tech = keyof typeof Logo;
 
-type IconComponent = () => JSX.Element;
 type SkillIconProps = { tech: Tech };
 
 export const SkillIcon = ({ tech }: SkillIconProps) => {
-  const LogoComponent: IconComponent = Logo[tech];
+  const LogoComponent = Logo[tech];
 
   return (
     <div className="skill-icon">
