@@ -4,12 +4,12 @@
 
 @tailwind base;
 
-html {
-  @apply bg-gradient-start-light text-[16px] text-black dark:bg-gradient-start-dark dark:text-secondary sm:text-[32px];
+body {
+  @apply bg-gradient-start-light dark:bg-gradient-start-dark;
 }
 
-body {
-  @apply bg-gradient bg-fixed;
+main {
+  @apply bg-gradient bg-fixed text-black dark:text-secondary;
 }
 
 @tailwind components;
