@@ -11,20 +11,20 @@
     @apply inline-block h-10 w-10 rounded-lg p-2;
   }
 
-  .skill-icon {
-    @apply icon-container border border-lightgray dark:border-secondary;
-  }
-
-  .skill-set {
-    @apply flex flex-row justify-center gap-4;
-  }
-
   .icon-button {
     @apply icon-container;
   }
 
   .icon-button > .icon {
     @apply fill-none stroke-black stroke-2 duration-200 hover:stroke-primary dark:stroke-secondary hover:dark:stroke-white;
+  }
+
+  .icon-link {
+    @apply icon-container border border-transparent duration-200 hover:border-black hover:dark:border-secondary;
+  }
+
+  .passive-icon {
+    @apply icon-container border border-lightgray dark:border-secondary;
   }
 }
 

@@ -2,11 +2,10 @@ import Image from "next/image";
 
 import * as content from "@content/index";
 import heroIllustration from "@public/hero-illustration.svg";
-
-import { SkillGroup } from "@components/SkillGroup";
-import { GitHub, LinkedIn } from "@components/svg/logos/logos";
 import { PageSection } from "@components/PageSection";
 import { Navbar } from "@components/Navbar";
+import { SkillGroup } from "@components/SkillGroup";
+import { IconLink } from "@components/svg";
 
 export default function Home() {
   return (
@@ -52,20 +51,11 @@ export default function Home() {
           Szentgotthárd, HU
         </h4>
         <div className="flex flex-row justify-center gap-8 py-8">
-          <a
+          <IconLink
+            icon="LinkedIn"
             href="https://www.linkedin.com/in/norbert-merkli-588703250/"
-            target="_blank"
-            className="icon-button"
-          >
-            <LinkedIn />
-          </a>
-          <a
-            href="https://github.com/NorbertMerkli"
-            target="_blank"
-            className="icon-button"
-          >
-            <GitHub />
-          </a>
+          />
+          <IconLink icon="GitHub" href="https://github.com/NorbertMerkli" />
         </div>
       </PageSection>
     </>

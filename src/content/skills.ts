@@ -1,7 +1,7 @@
-import { Tech } from "@/components/svg/logos";
+import { IconName } from "@/components/svg";
 
 export type SkillGroupContent = {
-  skills: Tech[];
+  skills: IconName[];
   title?: string;
   description: string;
 };

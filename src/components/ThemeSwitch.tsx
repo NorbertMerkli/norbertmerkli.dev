@@ -5,7 +5,7 @@ import {
   ThemeContext,
   ThemeContextType,
 } from "@components/providers/ThemeProvider";
-import { IconButton } from "@components/svg/icons";
+import { IconButton } from "@components/svg";
 
 export const ThemeSwitch = () => {
   const { isDark, switchTheme } = useContext(ThemeContext) as ThemeContextType;
