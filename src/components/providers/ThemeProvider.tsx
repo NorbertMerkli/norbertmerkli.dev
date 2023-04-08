@@ -1,6 +1,12 @@
 "use client";
 
-import { PropsWithChildren, createContext, useState, useEffect } from "react";
+import {
+  PropsWithChildren,
+  createContext,
+  useState,
+  useEffect,
+  useCallback,
+} from "react";
 
 export const ThemeContext = createContext({});
 
@@ -33,20 +39,23 @@ export const ThemeProvider = ({ children }: PropsWithChildren) => {
     setDark(getTheme());
   }, []);
 
-  const switchTheme = () =>
-    setDark((lastValue) => {
-      const newValue = !lastValue;
+  const switchTheme = useCallback(
+    () =>
+      setDark((lastValue) => {
+        const newValue = !lastValue;
 
-      if (newValue) {
-        localStorage.theme = "dark";
-        document.documentElement.classList.add("dark");
-      } else {
-        localStorage.theme = "light";
-        document.documentElement.classList.remove("dark");
-      }
+        if (newValue) {
+          localStorage.theme = "dark";
+          document.documentElement.classList.add("dark");
+        } else {
+          localStorage.theme = "light";
+          document.documentElement.classList.remove("dark");
+        }
 
-      return newValue;
-    });
+        return newValue;
+      }),
+    []
+  );
 
   return (
     <ThemeContext.Provider value={{ isDark, switchTheme }}>
