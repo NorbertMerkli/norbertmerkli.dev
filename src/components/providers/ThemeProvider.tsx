@@ -31,9 +31,7 @@ function getTheme(): boolean {
 }
 
 export const ThemeProvider = ({ children }: PropsWithChildren) => {
-  const [isDark, setDark] = useState(
-    window.matchMedia("(prefers-color-scheme: dark)").matches
-  );
+  const [isDark, setDark] = useState(false);
 
   useEffect(() => {
     setDark(getTheme());
