@@ -9,15 +9,15 @@ import { IconLink } from "@components/svg";
 export default function Home() {
   return (
     <>
-      <header className="flex h-screen flex-col pb-[10vh]">
-        <section className="safe-area text-center text-base">
-          <h1 className="font-serif text-6xl lg:text-left">
+      <header className="safe-area flex h-screen flex-col gap-8 py-14 lg:flex-row lg:gap-16">
+        <section className="flex-none self-center text-center lg:flex-1">
+          <h1 className="font-serif text-6xl sm:text-7xl lg:text-left">
             I&apos;m <span className="text-primary">Norbert</span> Merkli
           </h1>
-          <h2 className="mb-8 mt-4 text-xl text-darkgray dark:text-white sm:mb-4 sm:mt-2 sm:text-sm lg:text-left">
+          <h2 className="mb-8 mt-4 text-xl text-darkgray dark:text-white lg:text-left">
             A full-stack web developer.
           </h2>
-          <p className="text-xl sm:text-sm lg:text-left">
+          <p className="text-xl lg:text-left">
             Welcome to my site. Here I showcase my skills and share what
             I&apos;m learning about different technologies.
           </p>

@@ -4,6 +4,10 @@
 
 @tailwind base;
 
+html {
+  font-size: 16px;
+}
+
 main {
   @apply bg-gradient-to-t from-gradient-start-light to-gradient-end-light bg-fixed dark:from-gradient-start-dark dark:to-gradient-end-dark;
   @apply relative text-black dark:text-secondary;
@@ -28,6 +32,6 @@ main::after {
 
 @layer utilities {
   .safe-area {
-    @apply px-6 sm:px-7;
+    @apply mx-auto px-6 sm:px-8 lg:max-w-6xl;
   }
 }

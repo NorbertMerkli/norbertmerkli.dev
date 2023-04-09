@@ -17,7 +17,7 @@ export default function RootLayout({
     <ThemeProvider>
       <html lang="en">
         <body>
-          <main className="pt-14">
+          <main>
             <Navbar />
             {children}
           </main>
