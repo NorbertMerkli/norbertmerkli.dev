@@ -27,9 +27,3 @@
     @apply icon-container border border-lightgray dark:border-secondary;
   }
 }
-
-@layer utilities {
-  .border {
-    @apply border-[1px];
-  }
-}
