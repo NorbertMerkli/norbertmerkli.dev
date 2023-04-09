@@ -9,21 +9,20 @@ html {
 }
 
 main {
-  @apply bg-gradient-to-t from-gradient-start-light to-gradient-end-light bg-fixed dark:from-gradient-start-dark dark:to-gradient-end-dark;
-  @apply relative text-black dark:text-secondary;
+  @apply relative mt-14 bg-gradient-to-t from-gradient-start-light to-gradient-end-light bg-fixed text-black dark:from-gradient-start-dark dark:to-gradient-end-dark dark:text-secondary;
 }
 
-main::before,
-main::after {
+body::before,
+body::after {
   content: "";
   @apply fixed -z-50 h-[50vh] w-full;
 }
 
-main::before {
+body::before {
   @apply top-0 bg-gradient-end-light dark:bg-gradient-end-dark;
 }
 
-main::after {
+body::after {
   @apply bottom-0 bg-gradient-start-light dark:bg-gradient-start-dark;
 }
 
