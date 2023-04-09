@@ -1,6 +1,6 @@
 @layer components {
   .icon {
-    @apply h-full w-full fill-black dark:fill-secondary;
+    @apply h-6 w-6 fill-black dark:fill-secondary;
   }
 
   .icon .light-boxes {
@@ -8,7 +8,7 @@
   }
 
   .icon-container {
-    @apply inline-block h-10 w-10 rounded-lg p-2;
+    @apply inline-flex h-10 w-10 items-center justify-center rounded-lg;
   }
 
   .icon-button {
