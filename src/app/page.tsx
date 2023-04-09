@@ -3,15 +3,12 @@ import Image from "next/image";
 import * as content from "@content/index";
 import heroIllustration from "@public/hero-illustration.svg";
 import { PageSection } from "@components/PageSection";
-import { Navbar } from "@components/Navbar";
 import { SkillGroup } from "@components/SkillGroup";
 import { IconLink } from "@components/svg";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
-
       <header className="flex h-screen flex-col pb-[10vh]">
         <section className="safe-area text-center text-base">
           <h1 className="font-serif text-6xl lg:text-left">

@@ -1,7 +1,7 @@
 import { ThemeSwitch } from "@components/ThemeSwitch";
 
 export const Navbar = () => (
-  <nav className="flex flex-row justify-between p-2">
+  <nav className="fixed top-0 flex h-14 w-full flex-row items-center justify-between px-2">
     <ThemeSwitch />
   </nav>
 );

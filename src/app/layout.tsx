@@ -1,6 +1,7 @@
 import "@styles/globals.css";
 
 import { ThemeProvider } from "@components/providers/ThemeProvider";
+import { Navbar } from "@components/Navbar";
 
 export const metadata = {
   title: "norbertmerkli.dev",
@@ -13,12 +14,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>
-        <main>
-          <ThemeProvider>{children}</ThemeProvider>
-        </main>
-      </body>
-    </html>
+    <ThemeProvider>
+      <html lang="en">
+        <body>
+          <main className="pt-14">
+            <Navbar />
+            {children}
+          </main>
+        </body>
+      </html>
+    </ThemeProvider>
   );
 }
