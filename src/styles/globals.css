@@ -34,4 +34,8 @@ main::after {
   .safe-area {
     @apply mx-auto px-6 sm:px-8 lg:max-w-6xl;
   }
+
+  .card {
+    @apply rounded-2xl border-0 border-lightgray duration-200 dark:border-secondary md:border md:p-8 xl:p-12;
+  }
 }

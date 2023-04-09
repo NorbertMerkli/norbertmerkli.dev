@@ -33,7 +33,7 @@ export default function Home() {
       </header>
 
       <PageSection title="Skills">
-        <div className="flex flex-col gap-12">
+        <div className="grid grid-cols-2 grid-rows-[8] gap-12 lg:gap-4">
           {content.skills.map((skill) => (
             <SkillGroup key={skill.description} content={skill} />
           ))}
