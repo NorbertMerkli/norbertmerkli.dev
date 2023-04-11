@@ -8,7 +8,7 @@
   }
 
   .icon-container {
-    @apply inline-flex h-10 w-10 items-center justify-center rounded-lg;
+    @apply inline-flex h-10 w-10 items-center justify-center rounded-lg outline-none outline-offset-8 duration-200 focus-visible:outline-offset-1 focus-visible:outline-primary;
   }
 
   .icon-button {
