@@ -6,8 +6,8 @@ type SkillGroupProps = {
 };
 
 export const SkillGroup = ({ content }: SkillGroupProps) => (
-  <article className="card col-span-2 row-span-1 flex flex-col gap-6 text-center lg:col-span-1 lg:row-span-2">
-    <div className="flex flex-row justify-center gap-4">
+  <article className="card col-span-2 row-span-1 flex flex-col gap-6 text-center lg:col-span-1 lg:row-span-2 lg:text-left">
+    <div className="flex flex-row justify-center gap-4 lg:justify-start">
       {content.skills.map((skill) => (
         <PassiveIcon key={skill} icon={skill} />
       ))}
