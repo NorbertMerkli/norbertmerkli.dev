@@ -2,7 +2,7 @@ import { EventHandler, MouseEvent } from "react";
 
 import * as Icons from "./icons";
 
-type IconName = keyof typeof Icons;
+export type IconName = keyof typeof Icons;
 type IconProps = { icon: IconName };
 type IconButtonProps = IconProps & { onClick: EventHandler<MouseEvent> };
 type IconLinkProps = IconProps & { href: string };

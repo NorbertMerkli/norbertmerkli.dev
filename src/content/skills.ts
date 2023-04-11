@@ -1,4 +1,4 @@
-import { IconName } from "@/components/svg";
+import { IconName } from "@components/svg";
 
 export type SkillGroupContent = {
   skills: IconName[];
