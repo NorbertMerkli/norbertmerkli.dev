@@ -10,14 +10,14 @@ export default function Home() {
   return (
     <>
       <header className="safe-area flex h-screen flex-col gap-8 pb-20 pt-6 lg:flex-row lg:gap-16">
-        <section className="flex-none self-center text-center lg:flex-1">
-          <h1 className="font-serif text-6xl sm:text-7xl lg:text-left">
+        <section className="flex-none self-center text-center lg:flex-1 lg:text-left">
+          <h1 className="font-serif text-6xl sm:text-7xl">
             I&apos;m <span className="text-primary">Norbert</span> Merkli
           </h1>
-          <h2 className="mb-8 mt-4 text-xl text-darkgray dark:text-white lg:text-left">
+          <h2 className="mt-4 text-xl text-darkgray dark:text-white">
             A full-stack web developer.
           </h2>
-          <p className="text-xl lg:text-left">
+          <p className="my-8 text-xl">
             Welcome to my site. Here I showcase my skills and share what
             I&apos;m learning about different technologies.
           </p>
