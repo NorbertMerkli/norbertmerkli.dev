@@ -3,6 +3,7 @@
 import { ThemeSwitch } from "@components/ThemeSwitch";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { useState } from "react";
+import { Favicon } from "./svg/icons";
 
 export const Navbar = () => {
   const scrollThreshold = 20;
@@ -25,6 +26,7 @@ export const Navbar = () => {
       }
     >
       <nav className="safe-area flex h-14 flex-row items-center justify-between">
+        <Favicon />
         <ThemeSwitch />
       </nav>
     </div>
