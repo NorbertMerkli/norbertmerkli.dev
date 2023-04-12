@@ -9,7 +9,10 @@ import { IconLink } from "@components/svg";
 export default function Home() {
   return (
     <>
-      <header className="safe-area flex h-screen flex-col gap-8 pb-20 pt-6 lg:flex-row lg:gap-16">
+      <header
+        id="home"
+        className="safe-area flex h-screen flex-col gap-8 pb-20 pt-6 lg:flex-row lg:gap-16"
+      >
         <section className="flex-none self-center text-center lg:flex-1 lg:text-left">
           <h1 className="font-serif text-6xl sm:text-7xl">
             I&apos;m <span className="text-primary">Norbert</span> Merkli
@@ -32,7 +35,7 @@ export default function Home() {
         </div>
       </header>
 
-      <PageSection title="Skills">
+      <PageSection id="skills" title="Skills">
         <div className="grid grid-cols-2 grid-rows-[8] gap-12 lg:gap-4">
           {content.skills.map((skill) => (
             <SkillGroup key={skill.description} content={skill} />
@@ -40,7 +43,7 @@ export default function Home() {
         </div>
       </PageSection>
 
-      <PageSection title="Contact">
+      <PageSection id="contact" title="Contact">
         <h2 className="text-center font-serif text-xl dark:text-white">
           Norbert Merkli
         </h2>

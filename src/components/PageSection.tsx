@@ -1,12 +1,13 @@
 import { PropsWithChildren } from "react";
 
 type PageSectionProps = PropsWithChildren & {
+  id: string;
   title: string;
 };
 
-export const PageSection = ({ title, children }: PageSectionProps) => {
+export const PageSection = ({ id, title, children }: PageSectionProps) => {
   return (
-    <section className="safe-area py-12">
+    <section id={id} className="safe-area py-12">
       <h3 className="mb-16 text-center uppercase text-darkgray dark:text-secondary">
         {title}
       </h3>
