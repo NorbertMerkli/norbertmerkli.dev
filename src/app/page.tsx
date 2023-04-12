@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <header
         id="home"
-        className="safe-area flex h-screen flex-col gap-8 pb-20 pt-6 lg:flex-row lg:gap-16"
+        className="safe-area flex h-screen snap-start scroll-m-0 scroll-p-0 flex-col gap-8 pb-20 pt-6 lg:flex-row lg:gap-16"
       >
         <section className="flex-none self-center text-center lg:flex-1 lg:text-left">
           <h1 className="font-serif text-6xl sm:text-7xl">

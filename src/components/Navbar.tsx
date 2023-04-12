@@ -9,11 +9,11 @@ export const Navbar = () => {
   const scrollThreshold = 20;
 
   const { scrollY } = useScroll();
-  const [isPageStart, setIsPageStart] = useState(scrollY.get() < 40);
+  const [isPageStart, setIsPageStart] = useState(true);
 
   useMotionValueEvent(scrollY, "change", (value) => {
-    if (scrollY.get() < scrollThreshold && !isPageStart) setIsPageStart(true);
-    if (scrollY.get() > scrollThreshold && isPageStart) setIsPageStart(false);
+    if (value < scrollThreshold && !isPageStart) setIsPageStart(true);
+    if (value > scrollThreshold && isPageStart) setIsPageStart(false);
   });
 
   return (

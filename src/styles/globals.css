@@ -7,11 +7,11 @@
 html {
   font-size: 16px;
   -webkit-tap-highlight-color: transparent;
-  @apply selection:bg-primary selection:text-white;
+  @apply scroll-smooth selection:bg-primary selection:text-white;
 }
 
 main {
-  @apply relative bg-gradient-to-t from-gradient-start-light to-gradient-end-light bg-fixed pt-14 text-black dark:from-gradient-start-dark dark:to-gradient-end-dark dark:text-secondary;
+  @apply relative snap-start scroll-m-0 scroll-p-0 bg-gradient-to-t from-gradient-start-light to-gradient-end-light bg-fixed pt-14 text-black dark:from-gradient-start-dark dark:to-gradient-end-dark dark:text-secondary;
 }
 
 body::before,
