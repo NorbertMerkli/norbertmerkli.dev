@@ -39,4 +39,8 @@ body::after {
   .card {
     @apply rounded-2xl border-0 border-lightgray duration-200 dark:border-secondary md:border md:bg-white md:p-8 md:dark:bg-gradient-end-dark xl:p-12;
   }
+
+  .graph-cell {
+    @apply h-1 w-1 rounded-sm md:h-2 md:w-2;
+  }
 }

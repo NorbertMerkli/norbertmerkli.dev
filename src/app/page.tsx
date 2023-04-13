@@ -5,6 +5,7 @@ import heroIllustration from "@public/hero-illustration.svg";
 import { PageSection } from "@components/PageSection";
 import { SkillGroup } from "@components/SkillGroup";
 import { IconLink } from "@components/svg";
+import { ContributionGraph } from "@/components/ContributionGraph";
 
 export default function Home() {
   return (
@@ -41,6 +42,10 @@ export default function Home() {
             <SkillGroup key={skill.description} content={skill} />
           ))}
         </div>
+      </PageSection>
+
+      <PageSection id="projects" title="Projects">
+        <ContributionGraph />
       </PageSection>
 
       <PageSection id="contact" title="Contact">
