@@ -80,9 +80,9 @@ function scrapeDailyContributions(markup: string): number[] {
 
   const dailyContributions = matches.map((match) => {
     const matchValue = match[0];
-    const value = matchValue.slice(-1);
+    const contributionStat = matchValue.slice(-1);
 
-    return Number.parseInt(value);
+    return Number.parseInt(contributionStat);
   });
 
   return dailyContributions;
@@ -95,10 +95,9 @@ function scrapeTotalContributionCount(markup: string): number {
     throw new Error("Missing contribution summary in the GitHub response");
 
   const matchValue = match[0];
-  const valueAsString = matchValue.split(" ")[0];
-  const totalContributionsCount = Number.parseInt(valueAsString as string);
+  const totalContributions = matchValue.split(" ")[0];
 
-  return totalContributionsCount;
+  return Number.parseInt(totalContributions as string);
 }
 
 async function getContributionData() {
