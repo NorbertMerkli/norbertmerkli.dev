@@ -13,7 +13,37 @@ export const ContributionGraph = () => {
   );
 };
 
-const Loading = () => <h1>Loading contribution data from GitHub...</h1>;
+const Loading = ({ error }: { error?: Error }) => {
+  const placeholderValues: number[] = new Array(53 * 7).fill(0);
+
+  return (
+    <>
+      <ul className="inline-grid grid-flow-col grid-rows-7 gap-[2px] lg:gap-1">
+        {placeholderValues.map((value, i) => (
+          <li key={i}>
+            <div
+              className={
+                "graph-cell " +
+                [
+                  "bg-white dark:bg-gradient-end-dark",
+                  "bg-sky-300 dark:bg-sky-700",
+                  "bg-sky-500 dark:bg-sky-500",
+                  "bg-sky-700 dark:bg-sky-300",
+                  "bg-sky-900 dark:bg-white",
+                ][value]
+              }
+            ></div>
+          </li>
+        ))}
+      </ul>
+      <div className="flex flex-row items-center justify-between text-xs text-darkgray md:text-sm">
+        <p>
+          {error ? error.message : "Loading cotribution data from GitHub..."}
+        </p>
+      </div>
+    </>
+  );
+};
 
 const Graph = async () => {
   try {
@@ -57,16 +87,7 @@ const Graph = async () => {
       </>
     );
   } catch (error) {
-    return (
-      <div className="rounded-lg border-2 border-red-500 p-8 text-center text-red-500 dark:border-red-200 dark:text-red-200 lg:text-left">
-        <h1 className="font-serif text-2xl">Oops!</h1>
-        <p className="mb-8 mt-4 uppercase">{(error as Error).message}</p>
-        <h2>
-          Here should be my contribution graph from GitHub, but apparently
-          something went wrong. Sorry
-        </h2>
-      </div>
-    );
+    return <Loading error={error as Error} />;
   }
 };
 
