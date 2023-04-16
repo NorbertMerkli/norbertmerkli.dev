@@ -6,6 +6,7 @@ import { PageSection } from "@components/PageSection";
 import { SkillGroup } from "@components/SkillGroup";
 import { IconLink } from "@components/svg";
 import { ContributionGraph } from "@/components/ContributionGraph";
+import { ProjectCard } from "@/components/ProjectSummary";
 
 export default function Home() {
   return (
@@ -47,6 +48,11 @@ export default function Home() {
       <PageSection id="projects" title="Projects">
         {/* @ts-expect-error Async Server Component */}
         <ContributionGraph />
+        <div className="mt-12 flex flex-col gap-6">
+          {content.projects.map((project) => (
+            <ProjectCard key={project.name} project={project} />
+          ))}
+        </div>
       </PageSection>
 
       <PageSection id="contact" title="Contact">
