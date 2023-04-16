@@ -1,0 +1,22 @@
+@layer components {
+  .button {
+    @apply inline-flex flex-nowrap items-center justify-center rounded-lg border border-primary px-6 py-2 duration-200 hover:border-black dark:hover:border-white;
+  }
+
+  .button-row {
+    @apply flex flex-row flex-wrap gap-4;
+  }
+
+  .button-row > button,
+  .button-row > a {
+    @apply flex-1 px-4;
+  }
+
+  .primary-button {
+    @apply button bg-primary text-white;
+  }
+
+  .outlined-button {
+    @apply button text-primary hover:bg-gradient-end-light dark:border-secondary dark:text-secondary dark:hover:bg-gradient-end-dark;
+  }
+}

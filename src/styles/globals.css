@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Nunito:ital@0;1&display=swap");
 
 @import "./icons.css";
+@import "./buttons.css";
 
 @tailwind base;
 
