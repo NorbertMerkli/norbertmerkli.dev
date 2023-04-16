@@ -45,6 +45,7 @@ export default function Home() {
       </PageSection>
 
       <PageSection id="projects" title="Projects">
+        {/* @ts-expect-error Async Server Component */}
         <ContributionGraph />
       </PageSection>
 

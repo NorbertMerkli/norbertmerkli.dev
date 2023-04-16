@@ -43,4 +43,8 @@ body::after {
   .graph-cell {
     @apply h-1 w-1 rounded-sm md:h-2 md:w-2;
   }
+
+  .caption {
+    @apply text-xs text-darkgray md:text-sm;
+  }
 }
