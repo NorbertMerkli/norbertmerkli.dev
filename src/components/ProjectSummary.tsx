@@ -18,7 +18,11 @@ export const ProjectCard = ({
         ))}
       </div>
       <div className="button-row">
-        <a href={url} target="_blank" className="primary-button">
+        <a
+          href={url}
+          target="_blank"
+          className="primary-button pointer-events-none opacity-50"
+        >
           Watch it live
         </a>
         <a href={repositoryLink} target="_blank" className="outlined-button">

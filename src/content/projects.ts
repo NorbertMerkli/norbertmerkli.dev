@@ -11,23 +11,9 @@ export type ProjectSummary = {
 export const projects: ProjectSummary[] = [
   {
     name: "norbertmerkli.dev",
-    description: "My developer portfolio",
+    description: "My developer portfolio. You are watching it right now.",
     skills: ["TypeScript", "React", "Next", "TailwindCSS"],
     url: "https://norbertmerkli.dev",
     repositoryLink: "https://github.com/NorbertMerkli/norbertmerkli.dev",
-  },
-  {
-    name: "simple-chat",
-    description: "A simple video-chat app",
-    skills: ["TypeScript", "React", "Next", "TailwindCSS"],
-    url: "https://simple-chat.norbertmerkli.dev",
-    repositoryLink: "https://github.com/NorbertMerkli/simple-chat",
-  },
-  {
-    name: "whiteboard",
-    description: "A simple whiteboard app",
-    skills: ["TypeScript", "React", "Next", "TailwindCSS"],
-    url: "https://whiteboard.norbertmerkli.dev",
-    repositoryLink: "https://github.com/NorbertMerkli/whiteboard",
   },
 ];
