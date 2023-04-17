@@ -5,6 +5,22 @@
 
 @tailwind base;
 
+* {
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  @apply w-3;
+}
+
+*::-webkit-scrollbar-track {
+  @apply bg-lightgray dark:bg-black;
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-darkgray;
+}
+
 html {
   font-size: 16px;
   -webkit-tap-highlight-color: transparent;
