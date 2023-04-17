@@ -9,7 +9,7 @@
 
   .button-row > button,
   .button-row > a {
-    @apply flex-1 px-4;
+    @apply shrink-0 flex-grow px-4;
   }
 
   .primary-button {
