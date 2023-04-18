@@ -5,7 +5,7 @@ export const config: NextConfig = {
   runtime: "edge",
 };
 
-export default async function handler() {
+export async function GET() {
   const font = await fetch(
     new URL("@public/LibreBaskerville-Bold.ttf", import.meta.url)
   );
