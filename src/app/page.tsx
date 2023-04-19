@@ -59,9 +59,9 @@ export default function Home() {
         <h2 className="text-center font-serif text-xl dark:text-white">
           Norbert Merkli
         </h2>
-        <h4 className="text-center text-darkgray dark:text-secondary">
+        <h3 className="text-center text-darkgray dark:text-secondary">
           Szentgotthárd, HU
-        </h4>
+        </h3>
         <div className="flex flex-row justify-center gap-8 py-8">
           <IconLink
             icon="LinkedIn"

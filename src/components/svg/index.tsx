@@ -21,7 +21,11 @@ export const IconButton = ({ icon, onClick }: IconButtonProps) => {
   const IconComponent = Icons[icon];
 
   return (
-    <button onClick={onClick} className="icon-button">
+    <button
+      onClick={onClick}
+      className="icon-button"
+      aria-label="Button element"
+    >
       <IconComponent />
     </button>
   );
@@ -31,7 +35,7 @@ export const IconLink = ({ icon, href }: IconLinkProps) => {
   const IconComponent = Icons[icon];
 
   return (
-    <a href={href} className="icon-link">
+    <a href={href} className="icon-link" aria-label="Link element">
       <IconComponent />
     </a>
   );

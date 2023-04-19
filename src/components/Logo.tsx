@@ -24,6 +24,7 @@ export const Logo = () => {
           (target ? " pointer-events-auto" : " pointer-events-none")
         }
         tabIndex={target ? 0 : -1}
+        aria-label="Back to the top of the page"
       >
         <svg
           className="h-4 w-4 fill-primary dark:fill-secondary"
@@ -51,6 +52,7 @@ const BackToTopButton = ({ target }: { target: string }) => (
       "icon-container fixed right-6 border border-primary bg-primary shadow-lg shadow-black/50 duration-200 hover:border-white dark:shadow-[#000]/50 sm:right-8" +
       (target ? " bottom-6 sm:bottom-8" : " -bottom-12")
     }
+    aria-label="Back to the top of the page"
   >
     <UpArrow />
   </a>

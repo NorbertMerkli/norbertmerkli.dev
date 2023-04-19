@@ -22,10 +22,16 @@ export const ProjectCard = ({
           href={url}
           target="_blank"
           className="primary-button pointer-events-none opacity-50"
+          aria-label="Watch the live project"
         >
           Watch it live
         </a>
-        <a href={repositoryLink} target="_blank" className="outlined-button">
+        <a
+          href={repositoryLink}
+          target="_blank"
+          className="outlined-button"
+          aria-label="Read the source code on GitHub"
+        >
           Read the code
         </a>
       </div>
