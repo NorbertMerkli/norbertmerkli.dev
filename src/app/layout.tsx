@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://norbertmerkli.dev",
     images: {
-      url: "https://norbertmerkli.dev/og-image.jpg",
+      url: "/og-image.jpg",
       alt: "Personal logo",
       type: "image/jpeg",
       width: 1200,
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: [
       {
-        url: "https://norbertmerkli.dev/twitter-card-image.jpg",
+        url: "/twitter-card-image.jpg",
         alt: "Personal logo",
         type: "image/jpeg",
         width: 1024,
