@@ -1,12 +1,12 @@
 import "@styles/globals.css";
 
+import { Metadata } from "next";
+
 import { ThemeProvider } from "@components/providers/ThemeProvider";
 import { Navbar } from "@components/Navbar";
-import { Metadata } from "next";
 
 const title = "Norbert Merkli";
 const description = "Full-stack web developer.";
-const ogImage = "https://norbertmerkli.dev/og";
 
 export const metadata: Metadata = {
   title: "norbertmerkli.dev",
@@ -17,8 +17,11 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://norbertmerkli.dev",
     images: {
-      url: ogImage,
+      url: "https://norbertmerkli.dev/og-image.jpg",
       alt: "Personal logo",
+      type: "image/jpeg",
+      width: 1200,
+      height: 630,
     },
     siteName: "norbertmerkli.dev",
   },
@@ -27,7 +30,15 @@ export const metadata: Metadata = {
     description,
     site: "@Norbert_Merkli",
     card: "summary_large_image",
-    images: [ogImage],
+    images: [
+      {
+        url: "https://norbertmerkli.dev/twitter-card-image.jpg",
+        alt: "Personal logo",
+        type: "image/jpeg",
+        width: 1024,
+        height: 512,
+      },
+    ],
   },
 };
 
