@@ -11,6 +11,13 @@ const description = "Full-stack web developer.";
 export const metadata: Metadata = {
   title: "norbertmerkli.dev",
   description: "My developer portfolio",
+  alternates: {
+    canonical: "https://norbertmerkli.dev",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     title,
     description,
