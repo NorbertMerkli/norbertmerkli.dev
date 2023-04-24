@@ -49,6 +49,13 @@ export const metadata: Metadata = {
   },
 };
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  url: "https://www.norbertmerkli.dev",
+  logo: "https://www.norbertmerkli.dev/logo.png",
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -63,6 +70,10 @@ export default function RootLayout({
             {children}
           </main>
         </body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
       </html>
     </ThemeProvider>
   );
