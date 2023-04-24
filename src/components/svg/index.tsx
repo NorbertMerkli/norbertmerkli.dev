@@ -35,7 +35,12 @@ export const IconLink = ({ icon, href }: IconLinkProps) => {
   const IconComponent = Icons[icon];
 
   return (
-    <a href={href} className="icon-link" aria-label="Link element">
+    <a
+      href={href}
+      target="_blank"
+      className="icon-link"
+      aria-label="Link element"
+    >
       <IconComponent />
     </a>
   );
