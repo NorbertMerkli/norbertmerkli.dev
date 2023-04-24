@@ -26,6 +26,14 @@ export default function Home() {
             This is my site where I showcase my skills and share what I&apos;m
             learning about different technologies.
           </p>
+          <a
+            href="#contact"
+            className="primary-button"
+            aria-label="Go to the contact section"
+            title="Go to the contact section"
+          >
+            Contact me
+          </a>
         </section>
         <div className="relative z-0 flex-1">
           <Image
