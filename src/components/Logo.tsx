@@ -25,7 +25,7 @@ export const Logo = () => {
         }
         tabIndex={target ? 0 : -1}
         aria-label="Back to the top of the page"
-        target="Back to the top of the page"
+        title="Back to the top of the page"
       >
         <svg
           className="h-4 w-4 fill-primary dark:fill-secondary"
@@ -54,7 +54,7 @@ const BackToTopButton = ({ target }: { target: string }) => (
       (target ? " bottom-6 sm:bottom-8" : " -bottom-12")
     }
     aria-label="Back to the top of the page"
-    target="Back to the top of the page"
+    title="Back to the top of the page"
   >
     <UpArrow />
   </a>
