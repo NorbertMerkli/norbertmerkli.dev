@@ -13,10 +13,10 @@
   }
 
   .primary-button {
-    @apply button bg-primary text-white;
+    @apply button bg-primary uppercase text-white;
   }
 
   .outlined-button {
-    @apply button text-primary hover:bg-gradient-end-light dark:border-secondary dark:text-secondary dark:hover:bg-gradient-end-dark;
+    @apply button uppercase text-primary hover:bg-gradient-end-light dark:border-secondary dark:text-secondary dark:hover:bg-gradient-end-dark;
   }
 }
