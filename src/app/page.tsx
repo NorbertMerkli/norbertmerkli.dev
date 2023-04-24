@@ -23,8 +23,8 @@ export default function Home() {
             A full-stack web developer.
           </h2>
           <p className="my-8 text-xl">
-            Welcome to my site. Here I showcase my skills and share what
-            I&apos;m learning about different technologies.
+            This is my site where I showcase my skills and share what I&apos;m
+            learning about different technologies.
           </p>
         </section>
         <div className="relative z-0 flex-1">
