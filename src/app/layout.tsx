@@ -63,19 +63,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ThemeProvider>
-      <html lang="en">
-        <body>
+    <html lang="en">
+      <body>
+        <ThemeProvider>
           <main id="page-top">
             <Navbar />
             {children}
           </main>
-        </body>
+        </ThemeProvider>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
-      </html>
-    </ThemeProvider>
+      </body>
+    </html>
   );
 }
