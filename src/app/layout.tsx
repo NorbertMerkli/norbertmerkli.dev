@@ -11,8 +11,9 @@ const description = "Full-stack web developer.";
 export const metadata: Metadata = {
   title: "norbertmerkli.dev",
   description: "My developer portfolio",
+  metadataBase: new URL("https://www.norbertmerkli.dev"),
   alternates: {
-    canonical: "https://norbertmerkli.dev",
+    canonical: "https://www.norbertmerkli.dev",
   },
   robots: {
     index: true,
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
     title,
     description,
     type: "website",
-    url: "https://norbertmerkli.dev",
+    url: "https://www.norbertmerkli.dev",
     images: {
       url: "/og-image.jpg",
       alt: "Personal logo",
